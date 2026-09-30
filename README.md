@@ -5,7 +5,7 @@
 | 项目 | 在线入口 | 内容 |
 | --- | --- | --- |
 | 个人AI求职信息与决策辅助系统 | [未来雷达](https://frostfire-ai.onrender.com/?product=recruitment) | 冰焰实际服务；登录后直接进入未来雷达。 |
-| 大模型辅助知识理解与证据问答 | [极光域](https://frostfire-ai.onrender.com/?product=general) | 登录后直接进入冰焰的资料、对话与可追溯问答工作区。 |
+| 大模型辅助知识理解与证据问答 | [跃迁域](https://frostfire-ai.onrender.com/?product=general) | 登录后直接进入冰焰的资料、对话与可追溯问答工作区。 |
 | AI科研论文评估与可信度核查（CS2-2） | [接口状态](https://pythonerjavaer.github.io/interview-portfolio/projects/papers.html) | 真实前后端联调范围与公开部署状态。 |
 | TWE并购与融资决策分析 | [打开网页](https://pythonerjavaer.github.io/interview-portfolio/projects/twe.html) | 在线幻灯片、PPT 下载、历史指标与融资试算。 |
 | 养老金生命周期策略研究 | [打开网页](https://pythonerjavaer.github.io/interview-portfolio/projects/retirement.html) | 在线幻灯片、PPT 下载和 1,000 次浏览器情景模拟。 |
