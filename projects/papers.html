@@ -1,1 +1,24 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>论文评估与可信度核查 · 傅饶</title><meta name="description" content="傅饶的产品与金融分析作品集，包含五个可在浏览器中体验的项目展示。"><link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"><link rel="stylesheet" href="../assets/styles.css"><script defer src="../assets/app.js"></script></head><body data-page="papers"><a class="skip" href="#main">跳到内容</a><header class="topbar"><div class="top-inner"><a class="brand" href="../index.html"><span class="brand-symbol">RF</span>傅饶 <span class="muted">/</span> 项目作品集</a><nav class="nav" aria-label="项目导航"><a href="../projects/radar.html">求职决策</a><a href="../projects/reading.html">知识问答</a><a href="../projects/papers.html" class="active" aria-current="page">论文评估</a><a href="../projects/twe.html">并购分析</a><a href="../projects/retirement.html">退休策略</a></nav></div></header><main id="main" class="shell"><div class="page-heading"><div><p class="eyebrow">Project 03</p><h1>论文评估与可信度核查</h1><p>查看研究主张、证据支持及待核实事项，理解多维评估如何形成。</p></div></div><div class="notice">CS2-2 交互演示：采用合成论文和预设评估记录，不上传论文、不调用真实模型，也不代表对真实论文的评价。团队源码保持私有。</div><div class="workspace"><aside class="panel"><h2>论文输入</h2><label class="field"><span>示例论文</span><select id="paper-select"><option value="0">样例 A · 跨域文档检索方法</option><option value="1">样例 B · 轻量检索消融研究</option></select></label><p class="helper">样例A演示证据缺口；样例B演示更完整的实验记录。</p><button id="paper-run" class="primary">查看示例评估</button><h3>分析链路</h3><div class="step"><span class="index">1</span><span>论文输入与内容解析</span></div><div class="step"><span class="index">2</span><span>多维评估与主张核查</span></div><div class="step"><span class="index">3</span><span>证据关联与结构化报告</span></div><div class="origin">原项目涉及前后端协作、任务状态、证据引用和异常处理。本演示重新编写公开界面与素材，未复制私有团队源码。</div></aside><section class="panel"><div class="result-title"><h2 id="paper-title">选择样例并查看评估</h2><span class="pill" id="paper-state">等待选择</span></div><p id="paper-summary" class="section-copy">可查看维度评分、主张与证据的对应关系，以及需要进一步核实的问题。</p><div id="paper-output" class="hidden"><div class="toggle-group" aria-label="报告视图"><button data-paper-tab="overview" aria-pressed="true">评估概览</button><button data-paper-tab="evidence" aria-pressed="false">主张与证据</button><button data-paper-tab="limits" aria-pressed="false">核查与局限</button></div><div id="paper-content" aria-live="polite"></div><button class="small spaced" id="paper-download">下载示例报告</button></div></section></div></main><footer class="footer"><span>傅饶 · 产品设计、数据分析与金融研究</span><a href="https://github.com/pythonerjavaer/interview-portfolio" target="_blank" rel="noopener">GitHub 项目入口</a></footer></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2-2 · 真实接口状态</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <main class="shell" style="padding-top:72px;max-width:820px">
+    <p class="eyebrow">Project 03 · CS2-2</p>
+    <h1>AI科研论文评估与可信度核查系统</h1>
+    <p>该项目已完成 React 前端与 FastAPI 后端的真实 HTTP 联调：前端提交论文来源并轮询任务状态；后端提供解析、模型调用、证据校验和结构化报告接口。</p>
+    <section class="panel"><h2>当前线上状态</h2>
+      <p>团队前端、后端和数据基准仓库仍为私有协作仓库，尚未配置可公开访问的部署服务。因此这里不放合成论文或预设报告来冒充线上产品。</p>
+      <p>真实模型模式需要部署端保存 DeepSeek API 密钥，并且目前只支持受限样本 <code>2307.08122v3</code>。后端说明也明确标注当前本机单实例版本不适合直接公开发布。</p>
+    </section>
+    <section class="panel"><h2>实际接口范围</h2>
+      <ul><li>前端：论文输入、模型与会议选项、进度轮询、证据侧栏和错误重试。</li><li>后端：<code>/health</code>、<code>/v1/models</code>、<code>/v1/assessments</code> 等真实 HTTP 接口。</li><li>真实样本：使用 DeepSeek 与受限 Benchmark 解析链路；通用论文解析仍未开放。</li></ul>
+    </section>
+    <p><a href="../index.html">返回作品集</a></p>
+  </main>
+</body>
+</html>
